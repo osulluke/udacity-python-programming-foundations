@@ -13,7 +13,7 @@ def rename_files():
     
     #2 - rename all files in directory.
     for file_name in file_list:
-        new_file_name = file_name.translate(None,"0123456789")
+        new_file_name = file_name.translate(None,"0123456789 ")
         print(file_name+" renamed to "+new_file_name)
         os.rename(file_name, new_file_name)
     os.chdir(saved_path)
